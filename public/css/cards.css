@@ -1,0 +1,15 @@
+.product-carts {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 900;
+    margin: 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    border-radius: 8px;
+}

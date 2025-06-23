@@ -1,0 +1,19 @@
+.products-carrousel{
+    padding-top: 80px;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    border-color: #cd482a;
+}
+
+.btn-primary:hover {
+    background-color: #fd937b;
+    border-color: #cd482a;
+}

@@ -1,0 +1,187 @@
+.products-carrousel{
+    padding-top: 80px;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    border-color: #cd482a;
+}
+
+.btn-primary:hover {
+    background-color: #fd937b;
+    border-color: #cd482a;
+}
+.header {
+    font-family: "Alfa Slab One", serif;
+
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    background-color: #ff5733;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cd482a;
+
+}
+
+.left-section-header {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-icon-header {
+    padding-left: 60px;
+    height: 48px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.middle-section-header {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    color: white;
+    margin-right: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+.right-section-header {
+    margin-right: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.right-header-icon{
+    padding: 2px;
+    height: 30px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+.footer {
+    font-family: "Alfa Slab One", serif;
+
+    display: flex;
+    height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    background-color: black;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+}
+
+.left-section-footer {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-icon-footer {
+    padding: 8px;
+    height: 58px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.middle-section-footer {
+    flex: 1;
+    margin-left: 200px;
+    margin-right: 35px;
+    max-width:500px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-title {
+    color: white;
+    margin-right: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+.right-section-footer {
+    margin-right: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.right-footer-icon{
+    margin: 10px;
+    padding: 2px;
+    height: 30px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.contact-us-form{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 900;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 40px 0 40px 500px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    box-shadow: black inset;
+    color: white;
+    width: 480px;
+}
+
+
+.product-carts {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 900;
+    margin: 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    border-radius: 8px;
+}
