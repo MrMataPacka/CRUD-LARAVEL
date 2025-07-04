@@ -46,9 +46,9 @@
         </div>
 
         <div class="mt-4 text-center">
-            <a href="#" class="text-blue-600 hover:underline text-sm">
+            {{-- <a href="#" class="text-blue-600 hover:underline text-sm">
                 ¿Olvidaste tu contraseña?
-            </a>
+            </a> --}}
         </div>
     </div>
 </div>
