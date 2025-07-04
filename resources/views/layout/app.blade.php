@@ -22,8 +22,12 @@
             @endif
         </div>
 
-        @if(!request()->routeIs('login') && !request()->routeIs('login.post'))
+        @if(in_array(request()->segment(1), ['dashboard']))
             <a href="{{ route('logout') }}" class="text-sm text-gray-300 hover:underline">Logout</a>
+        @endif
+
+        @if(in_array(request()->segment(1), ['create-user']))
+            <a href="{{ route('login') }}" class="text-sm text-gray-300 hover:underline">Cancel</a>
         @endif
     </header>
 

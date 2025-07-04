@@ -37,7 +37,7 @@
                     <button
                       type="submit"
                       id="btnSubmit"
-                      class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                      class="w-full bg-gray-800 text-white py-2 rounded hover:bg-green-300 transition"
                     >
                         Sign in
                     </button>
@@ -46,9 +46,14 @@
         </div>
 
         <div class="mt-4 text-center">
-            {{-- <a href="#" class="text-blue-600 hover:underline text-sm">
+            <a href="{{ route('restore.password') }}" class="text-gray-800 px-4 py-2 rounded text-sm hover:bg-gray-800 hover:text-white">
                 ¿Olvidaste tu contraseña?
-            </a> --}}
+            </a>
+        </div>
+        <div class="mt-4 text-center">
+            <a href="{{ route('create.user') }}" class="text-gray-800 px-4 py-2 rounded text-sm hover:bg-gray-800 hover:text-white">
+                ¿No tienes cuenta? Regístrate
+            </a>
         </div>
     </div>
 </div>
