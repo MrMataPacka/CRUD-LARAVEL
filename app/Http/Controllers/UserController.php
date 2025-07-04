@@ -78,8 +78,7 @@ class UserController extends Controller
             $file->move(public_path('img/users-icons'), $filename);
             $data['photo'] = 'img/users-icons/' . $filename;
         } else {
-            // 👇 Aquí usas la ruta que JS mandó manualmente
-            $data['photo'] = $request->input('photo', 'img/users-icons/Sample_User_Icon.png');
+            $data['photo'] = $request->input('current_photo', 'img/users-icons/Sample_User_Icon.png');
         }
 
         $user = AtUser::create(array_merge($data, [

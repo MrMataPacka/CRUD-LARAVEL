@@ -19,6 +19,7 @@
                     </label>
                     <input type="file" id="user_image" name="user_image" class="hidden"
                         onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])">
+                    <input type="hidden" name="current_photo" value="{{ $user->photo }}">
                 </div>
             </label>
 
