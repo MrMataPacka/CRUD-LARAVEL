@@ -7,6 +7,10 @@ document.getElementById('userForm').addEventListener('submit', async function (e
 
     const formData = new FormData(form);
 
+    const userImageInput = form.querySelector('input[name="user_image"]');
+    if (!userImageInput.files.length) {
+        formData.append('photo', 'img/users-icons/Sample_User_Icon.png');
+    }
 
     const method = form.querySelector('[name="_method"]')?.value || 'POST';
 
