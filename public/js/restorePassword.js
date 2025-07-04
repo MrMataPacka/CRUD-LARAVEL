@@ -1,5 +1,6 @@
 document.getElementById('restoreForm').addEventListener('submit', async function (e) {
     e.preventDefault();
+    const redirect = this.dataset.redirect;
     const email = document.getElementById('email').value;
 
     if (!email) {
@@ -17,5 +18,5 @@ document.getElementById('restoreForm').addEventListener('submit', async function
         text: `Si el correo ${email} está registrado, recibirás instrucciones para restablecer tu contraseña.`,
     });
 
-    window.location.href = "{{ route('login') }}";
+    window.location.href = redirect;
 });

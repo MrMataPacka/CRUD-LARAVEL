@@ -10,7 +10,7 @@
                 Restablecer contraseña
             </div>
             <div class="p-4">
-                <form id="restoreForm" method="POST" class="space-y-4">
+                <form id="restoreForm" method="POST" class="space-y-4" data-redirect="{{ route('login') }}">
                     @csrf
                     <div>
                         <label for="email" class="block font-medium">Correo electrónico</label>
