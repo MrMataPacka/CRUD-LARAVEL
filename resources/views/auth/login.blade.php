@@ -7,7 +7,7 @@
     <div class="w-full max-w-sm">
         <div class="bg-white rounded border shadow-sm overflow-hidden">
             <div class="bg-gray-100 px-4 py-2 font-semibold">
-                Iniciar sesión
+                Log In
             </div>
             <div class="p-4">
                 <div id="error-msg" class="text-red-500 mb-2 hidden"></div>
@@ -15,7 +15,7 @@
                 <form id="loginForm" method="POST" class="space-y-4">
                     @csrf
                     <div>
-                        <label for="email-auth" class="block font-medium">Correo electrónico</label>
+                        <label for="email-auth" class="block font-medium">Email</label>
                         <input
                           type="email"
                           name="email"
@@ -25,7 +25,7 @@
                         >
                     </div>
                     <div>
-                        <label for="password-auth"  class="block font-medium">Contraseña</label>
+                        <label for="password-auth"  class="block font-medium">Password</label>
                         <input
                           type="password"
                           name="password"
@@ -47,12 +47,12 @@
 
         <div class="mt-4 text-center">
             <a href="{{ route('restore.password') }}" class="text-gray-800 px-4 py-2 rounded text-sm hover:bg-gray-800 hover:text-white">
-                ¿Olvidaste tu contraseña?
+                Did you forgot your password?
             </a>
         </div>
         <div class="mt-4 text-center">
             <a href="{{ route('create.user') }}" class="text-gray-800 px-4 py-2 rounded text-sm hover:bg-gray-800 hover:text-white">
-                ¿No tienes cuenta? Regístrate
+                Don't have an account? Register
             </a>
         </div>
     </div>

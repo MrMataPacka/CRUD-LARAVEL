@@ -26,3 +26,12 @@ const mix = require('laravel-mix');
     'public/css/contactForm.css',
     'public/css/cards.css',
 ], 'public/build/css/beta.css');
+
+mix.js('resources/js/deleteButton.js', 'public/js')
+   .js('resources/js/restorePassword.js', 'public/js')
+   .js('resources/js/loginAuth.js', 'public/js')
+   .js('resources/js/userForm.js', 'public/js')
+   .js('resources/js/userIndex.js', 'public/js')
+   .js('resources/js/userShow.js', 'public/js')
+   .js('resources/js/locationFetch.js', 'public/js')
+   .version();

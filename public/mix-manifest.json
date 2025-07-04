@@ -1,3 +1,10 @@
 {
-    "/build/css/beta.css": "/build/css/beta.css"
+    "/js/deleteButton.js": "/js/deleteButton.js?id=6fd868630f643cd71c03f4c8cb1e1ad6",
+    "/js/restorePassword.js": "/js/restorePassword.js?id=02026df95db0eabfcd3a49b37c419305",
+    "/js/loginAuth.js": "/js/loginAuth.js?id=fab31047067114a677fa1009e06805e6",
+    "/js/userForm.js": "/js/userForm.js?id=cb9e32bf3cbe68b36074b559a41b5188",
+    "/js/userIndex.js": "/js/userIndex.js?id=a0465ce3931744faef1c1bca3c12f75c",
+    "/js/userShow.js": "/js/userShow.js?id=6c8c5dbe28ddb3d719a1b90b29587903",
+    "/js/locationFetch.js": "/js/locationFetch.js?id=3cac59f41c45adf4646c3b632d7e03ce",
+    "/build/css/beta.css": "/build/css/beta.css?id=813ea7eeb634e4f612a26d9481c73ec7"
 }
