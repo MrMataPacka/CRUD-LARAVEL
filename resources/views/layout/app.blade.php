@@ -12,7 +12,7 @@
 
     <header class="bg-gray-800 text-white flex items-center justify-between px-6 py-4">
         <div class="text-lg font-bold">
-            My Application
+            Dashboard
 
             @if(in_array(request()->segment(1), ['dashboard']))
                 <a href="{{ route('cities.index') }}" class="ml-2 text-gray-400 font-light">City</a>
