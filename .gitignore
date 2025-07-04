@@ -16,3 +16,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+public/img/users-icons/*
+!public/img/users-icons/.gitkeep
+!public/img/users-icons/Sample_User_Icon.png
