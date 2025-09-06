@@ -5,6 +5,9 @@
     "/js/userForm.js": "/js/userForm.js?id=cb9e32bf3cbe68b36074b559a41b5188",
     "/js/userIndex.js": "/js/userIndex.js?id=a0465ce3931744faef1c1bca3c12f75c",
     "/js/userShow.js": "/js/userShow.js?id=6c8c5dbe28ddb3d719a1b90b29587903",
+    "/js/apiUserShow.js": "/js/apiUserShow.js?id=ff1adfd91b7c4b83bdf15b73ee847daf",
+    "/js/apiUserForm.js": "/js/apiUserForm.js?id=66affa5a8c2ce9a65d272ef84ed034a0",
+    "/js/apiUserIndex.js": "/js/apiUserIndex.js?id=c2f864cccb937cc522f83e05a6abb0d1",
     "/js/locationFetch.js": "/js/locationFetch.js?id=3cac59f41c45adf4646c3b632d7e03ce",
     "/build/css/beta.css": "/build/css/beta.css?id=813ea7eeb634e4f612a26d9481c73ec7"
 }

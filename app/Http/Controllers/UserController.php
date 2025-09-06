@@ -93,7 +93,7 @@ class UserController extends Controller
 
     public function show($uid)
     {
-         $user = AtUser::findOrFail($uid);
+        $user = AtUser::findOrFail($uid);
 
         return view('users.show', [
             'user'       => $user,
@@ -125,10 +125,10 @@ class UserController extends Controller
                 'Inicio'     => route('dashboard'),
                 'Users'      => route('users.index'),
                 $user->name  => route('users.show', $user->uid),
-                'Actualizar' => null,
+                'Update' => null,
             ],
             'user'       => $user,
-            'title'      => 'Actualizar user',
+            'title'      => 'Update user',
             'states'     => $states,
             'towns'      => $towns,
             'selectedState'  => $selectedState,

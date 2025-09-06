@@ -7,7 +7,7 @@
         $user = \App\Models\AtUser::find(session('user_id'));
     @endphp
     <div class="text-center py-10">
-        <h1 class="text-5xl font-bold">Congratulations {{ $user->name }}!</h1>
+        <h1 class="text-5xl font-bold">Congratulations !</h1>
         <p class="mt-4 text-lg text-gray-600">You have successfully created your Yii-powered application.</p>
     </div>
 

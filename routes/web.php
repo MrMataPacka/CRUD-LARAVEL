@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ApiUserController;
 
 
 Route::middleware('guest.session')->group(function(){
@@ -26,7 +27,8 @@ Route::middleware('auth.session')->group(function(){
 
     Route::resources([
         'dashboard/users' => UserController::class,
-        'dashboard/cities' => CityController::class
+        'dashboard/cities' => CityController::class,
+        'dashboard/api-users' => ApiUserController::class
     ]);
 });
 

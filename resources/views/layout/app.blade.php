@@ -20,6 +20,9 @@
             @if(in_array(request()->segment(1), ['dashboard']))
                 <a href="{{ route('users.index') }}" class="ml-2 text-gray-400 font-light">Users</a>
             @endif
+            @if(in_array(request()->segment(1), ['dashboard']))
+                <a href="{{ route('api-users.index') }}" class="ml-2 text-gray-400 font-light">API Users</a>
+            @endif
         </div>
 
         @if(in_array(request()->segment(1), ['dashboard']))

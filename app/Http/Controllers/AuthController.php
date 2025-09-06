@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\AtState;
 use App\Models\AtTown;
+use App\Traits\ConsumeApiAuth;
 use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
-
+    use ConsumeApiAuth;
 
     public function showLogin()
     {
@@ -28,8 +29,8 @@ class AuthController extends Controller
             $user->status !== 'ACTIVO'
         ) {
             return response()->json([
-                'success' => false,
-                'message' => 'Correo o contraseña incorrectos o cuenta inactiva'
+            'success' => false,
+            'message' => 'Correo o contraseña incorrectos o cuenta inactiva'
             ], 401);
         }
 
@@ -42,6 +43,28 @@ class AuthController extends Controller
             'success' => true,
             'redirect' => route('dashboard')
         ]);
+
+        // VERSION API
+        // $email = $request->input('email');
+        // $password = $request->input('password');
+
+        // $auth = $this->getBearerToken($email, $password);
+
+        // if (!$auth['token']) {
+        //     return response()->json([
+        //         'success' => false,
+        //         'message' => 'credenciales invalidas',
+        //     ]);
+        // }
+        // session([
+        //     'api_token' => $auth['token'],
+        //     'api_uid' => $auth['uid'],
+        // ]);
+
+        // return response()->json([
+        //     'success' => true,
+        //     'redirect' => route('dashboard')
+        // ]);
     }
 
     public function restorePassword()
@@ -51,6 +74,7 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
+        // Para volver al api usa api_token en el middleware y aqui
         $request->session()->forget('user_id');
         return redirect()->route('login');
     }

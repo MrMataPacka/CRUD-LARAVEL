@@ -33,5 +33,8 @@ mix.js('resources/js/deleteButton.js', 'public/js')
    .js('resources/js/userForm.js', 'public/js')
    .js('resources/js/userIndex.js', 'public/js')
    .js('resources/js/userShow.js', 'public/js')
+   .js('resources/js/apiUserShow.js', 'public/js')
+   .js('resources/js/apiUserForm.js', 'public/js')
+   .js('resources/js/apiUserIndex.js', 'public/js')
    .js('resources/js/locationFetch.js', 'public/js')
    .version();

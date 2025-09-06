@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "748ee75433e6c2c44a28ae90f2e1c349",
+    "content-hash": "45afea92a9f7b1f0261ee85f2c6b447e",
     "packages": [
         {
             "name": "axn/laravel-models-generator",
